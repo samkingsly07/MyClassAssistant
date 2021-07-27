@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="20dp">
+        <EditText android:textColor="#000000" android:id="@+id/editText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Admission Number" android:layout_toLeftOf="@+id/fab" android:layout_alignParentTop="true" android:layout_toStartOf="@+id/fab"/>
+        <LinearLayout android:orientation="vertical" android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_below="@+id/editText" android:layout_alignLeft="@+id/editText" android:layout_alignStart="@+id/editText" android:elevation="5dp">
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@+id/profileContentView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+            <ListView android:id="@+id/attendProfileView_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <android.support.design.widget.FloatingActionButton android:layout_gravity="bottom" android:id="@+id/fab" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_content_add_circle" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:elevation="5dp" app:backgroundTint="@color/colorPrimary" app:borderWidth="0dp"/>
+        <Button android:id="@+id/buttonFind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FIND" android:layout_alignRight="@+id/fab" android:layout_alignBottom="@+id/editText" android:layout_alignParentTop="true" android:layout_alignEnd="@+id/fab" style="?android:attr/buttonStyleSmall"/>
+    </RelativeLayout>
+</RelativeLayout>

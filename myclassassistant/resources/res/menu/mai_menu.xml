@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/pro" android:orderInCategory="100" android:title="Profile" android:onClick="loadpro" app:showAsAction="never"/>
+    <item android:id="@+id/action_settings" android:orderInCategory="100" android:title="Settings" android:onClick="loadSettings" app:showAsAction="never"/>
+    <item android:id="@+id/about" android:orderInCategory="100" android:title="About" android:onClick="loadAbout" app:showAsAction="never"/>
+    <item android:id="@+id/ss" android:orderInCategory="100" android:title="profession" android:onClick="loadss" app:showAsAction="never"/>
+</menu>

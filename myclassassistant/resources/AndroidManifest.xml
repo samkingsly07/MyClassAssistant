@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="assistant.genuinecoder.s_assistant">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="28"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:theme="@style/AppTheme2" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:debuggable="true" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+        <activity android:name="assistant.genuinecoder.s_assistant.main.profile.Main5Activity"/>
+        <activity android:theme="@style/AppTheme2.NoActionBar" android:name="assistant.genuinecoder.s_assistant.main.profile.Main2Activity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_login" android:name="assistant.genuinecoder.s_assistant.p004ui.login.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme2" android:name="assistant.genuinecoder.s_assistant.Main3Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme2" android:name="assistant.genuinecoder.s_assistant.main.AppBase" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme2" android:name="assistant.genuinecoder.s_assistant.main.profile.ProfileActivity" android:screenOrientation="portrait" android:parentActivityName="assistant.genuinecoder.s_assistant.main.AppBase"/>
+        <activity android:theme="@style/AppTheme2" android:name="assistant.genuinecoder.s_assistant.main.profile.StudentRegistration" android:screenOrientation="portrait" android:parentActivityName="assistant.genuinecoder.s_assistant.main.profile.ProfileActivity"/>
+        <activity android:theme="@style/AppTheme2" android:name="assistant.genuinecoder.s_assistant.main.notes.NoteCreate" android:screenOrientation="portrait" android:parentActivityName="assistant.genuinecoder.s_assistant.main.notes.NoteActivity"/>
+        <activity android:theme="@style/AppTheme2" android:name="assistant.genuinecoder.s_assistant.main.attendance.AttendanceActivity" android:screenOrientation="portrait" android:parentActivityName="assistant.genuinecoder.s_assistant.main.AppBase"/>
+        <activity android:theme="@style/AppTheme2" android:name="assistant.genuinecoder.s_assistant.main.components.ResultActivity" android:screenOrientation="portrait" android:parentActivityName="assistant.genuinecoder.s_assistant.main.components.CgpaActivity"/>
+        <activity android:theme="@style/AppTheme2" android:name="assistant.genuinecoder.s_assistant.main.components.CgpaActivity" android:screenOrientation="portrait" android:parentActivityName="assistant.genuinecoder.s_assistant.main.AppBase"/>
+        <activity android:theme="@style/AppTheme2" android:name="assistant.genuinecoder.s_assistant.main.notes.NoteActivity" android:screenOrientation="portrait" android:parentActivityName="assistant.genuinecoder.s_assistant.main.AppBase"/>
+        <activity android:theme="@style/AppTheme2" android:name="assistant.genuinecoder.s_assistant.main.schedule.Scheduler" android:screenOrientation="portrait" android:parentActivityName="assistant.genuinecoder.s_assistant.main.AppBase"/>
+        <activity android:theme="@style/AppTheme2" android:name="assistant.genuinecoder.s_assistant.main.schedule.CreateScheduleActivity" android:screenOrientation="portrait" android:parentActivityName="assistant.genuinecoder.s_assistant.main.schedule.Scheduler"/>
+        <activity android:theme="@style/AppTheme2" android:label="@string/title_activity_settings" android:name="assistant.genuinecoder.s_assistant.main.components.SettingsActivity" android:screenOrientation="portrait" android:parentActivityName="assistant.genuinecoder.s_assistant.main.AppBase"/>
+        <activity android:theme="@style/AppTheme1" android:name="assistant.genuinecoder.s_assistant.main.components.About" android:screenOrientation="portrait" android:parentActivityName="assistant.genuinecoder.s_assistant.main.AppBase"/>
+        <activity android:theme="@style/AppTheme2" android:name="assistant.genuinecoder.s_assistant.main.components.pro" android:screenOrientation="portrait" android:parentActivityName="assistant.genuinecoder.s_assistant.main.AppBase"/>
+        <provider android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="assistant.genuinecoder.s_assistant.lifecycle-trojan"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.firebase.auth.internal.FederatedSignInActivity" android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleTask"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="assistant.genuinecoder.s_assistant.firebaseinitprovider" android:initOrder="100"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+    </application>
+</manifest>

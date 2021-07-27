@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/abcd" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10">
+        <Spinner android:textSize="20sp" android:id="@+id/attendanceSpinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="2"/>
+        <Button android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/loadButton" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Load" android:layout_weight="8"/>
+    </LinearLayout>
+    <ListView android:id="@+id/attendanceListViwe" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_above="@+id/buttonSaveAttendance" android:layout_below="@+id/abcd"/>
+    <Button android:textSize="16sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/buttonSaveAttendance" android:background="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SAVE" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>
